@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS employee_pid
+CREATE TABLE IF NOT EXISTS employee_info
 ( 
 employeeID	INT AUTO_INCREMENT,
 license_state	VARCHAR(32)	NOT NULL,
