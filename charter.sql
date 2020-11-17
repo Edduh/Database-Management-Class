@@ -11,6 +11,7 @@ FOREIGN KEY (busID) REFERENCE bus_info(busID)
 );
 
 INSERT INTO charter_list ( jobID , employeeID , busID , time , location )
+VALUES
 ( 54 , 1 , 3 , 15:00 , "4 Day Tour New York to Florida" ),
 ( 88 , 2 , 4 , 07:00 , "Round Trip New York City to Woodbury" ),
 ( 99 , 3 , 2 , 09:45 , "Round Trip New York to Windcreek Casino" ),
