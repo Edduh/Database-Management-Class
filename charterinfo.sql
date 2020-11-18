@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS client_info
 (
-jobID INT NOT NULL,
 clientID INT  NOT NULL,
+jobID INT NOT NULL,
 client_first_name VARCHAR(255)  NOT NULL,
 client_last_name  VARCHAR(255) NOT NULL,
 client_phone_number TEXT  NOT NULL,
