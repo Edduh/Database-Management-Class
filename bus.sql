@@ -4,7 +4,7 @@ busID INT NOT NULL,
 employeeID  INT NOT NULL,
 credit_card VARCHAR(255) NOT NULL,
 PRIMARY KEY (busID),
-FOREIGN KEY (employeeID) REFERENCES employee_pid(employeeID) 
+FOREIGN KEY (employeeID) REFERENCES employee_info(employeeID) 
 );
 
 INSERT INTO bus_info ( busID , employeeID , credit_card )
