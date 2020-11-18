@@ -10,13 +10,13 @@ PRIMARY KEY (clientID),
 FOREIGN KEY (jobID) REFERENCES charter_list(jobID)
 );
 
-INSERT INTO charter_info ( jobID , clientID , client_first_name , client_last_name , client_phone_number , client_email_address )
+INSERT INTO charter_info ( clientID , jobID , client_first_name , client_last_name , client_phone_number , client_email_address )
 VAUES
-( 54 , 22 , "Steve" , "Se" , 9177332313 , "stevese@gmail.com" ),
-( 88 , 25 , "Susan" , "Su" , 9178930242 , "susansu@gmail.com" ),
-( 99 , 28 , "Edward" , "Chen" , 6462312319 , "edwardchen@gmail.com" ),
-( 102 , 33 , "Jason" , "Morello" , 9293123128 , "jasonmorello@gmail.com"),
-( 112 , 37 , "Parth" , "Patel" , 8281727213 , "parthpatel@gmail.com");
+( 22 , 53 , "Steve" , "Se" , 9177332313 , "stevese@gmail.com" ),
+( 25 , 88 , "Susan" , "Su" , 9178930242 , "susansu@gmail.com" ),
+( 28 , 99 , "Edward" , "Chen" , 6462312319 , "edwardchen@gmail.com" ),
+( 33 , 102 , "Jason" , "Morello" , 9293123128 , "jasonmorello@gmail.com"),
+( 37 , 112 , "Parth" , "Patel" , 8281727213 , "parthpatel@gmail.com");
 
 SELECT * FROM charter_info;
 SELECT jobID FROM charter_info;
