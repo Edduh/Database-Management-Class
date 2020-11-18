@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS charter_info
+CREATE TABLE IF NOT EXISTS client_info
 (
 jobID INT NOT NULL,
 clientID INT  NOT NULL,
