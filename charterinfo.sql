@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS client_info
+CREATE TABLE IF NOT EXISTS charter_info
 (
 clientID INT  NOT NULL,
 jobID INT NOT NULL,
@@ -11,7 +11,7 @@ FOREIGN KEY (jobID) REFERENCES charter_list(jobID)
 );
 
 INSERT INTO charter_info ( clientID , jobID , client_first_name , client_last_name , client_phone_number , client_email_address )
-VAUES
+VALUES
 ( 22 , 53 , "Steve" , "Se" , 9177332313 , "stevese@gmail.com" ),
 ( 25 , 88 , "Susan" , "Su" , 9178930242 , "susansu@gmail.com" ),
 ( 28 , 99 , "Edward" , "Chen" , 6462312319 , "edwardchen@gmail.com" ),
@@ -24,5 +24,4 @@ SELECT clientID FROM charter_info;
 SELECT client_first_name FROM charter_info;
 SELECT client_last_name FROM charter_info;
 SELECT client_email_address FROM charter_info;
-
 
