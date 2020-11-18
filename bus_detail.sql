@@ -4,7 +4,7 @@ busID INT NOT NULL,
 vin TEXT NOT NULL,
 registration  INT NOT NULL,
 inspection_date  DATE NOT NULL,
-PRIMARY KEY (busID)
+FORIEGN KEY (busID) REFERENCE bus_info (busID)
 );
 
 INSERT INTO charter_list ( busID , vin , registration , inspection_date )
