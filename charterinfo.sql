@@ -4,7 +4,7 @@ clientID INT  NOT NULL,
 jobID INT NOT NULL,
 client_first_name VARCHAR(255)  NOT NULL,
 client_last_name  VARCHAR(255) NOT NULL,
-client_phone_number TEXT  NOT NULL,
+client_phone_number BIGINT  NOT NULL,
 client_email_address  VARCHAR(255)  NOT NULL,
 PRIMARY KEY (clientID),
 FOREIGN KEY (jobID) REFERENCES charter_list(jobID)
