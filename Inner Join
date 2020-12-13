@@ -12,3 +12,17 @@ mysql> SELECT charter_list.jobID, charter_info.clientID
 |   102 |       33 |
 |   112 |       37 |
 +-------+----------+
+
+ELECT *
+FROM charter_list 
+INNER JOIN charter_info ON charter_list.jobID = charter_info.jobID;
+
+mysql> SELECT *FROM charter_list INNER JOIN charter_info ON charter_list.jobID = charter_info.jobID;
++-------+------------+-------+----------+-----------------------------------------+----------+-------+-------------------+------------------+---------------------+------------------------+
+| jobID | employeeID | busID | time     | location                                | clientID | jobID | client_first_name | client_last_name | client_phone_number | client_email_address   |
++-------+------------+-------+----------+-----------------------------------------+----------+-------+-------------------+------------------+---------------------+------------------------+
+|    88 |          2 |     4 | 07:00:00 | Round Trip New York City to Woodbury    |       25 |    88 | Susan             | Su               | 9178930242          | susansu@gmail.com      |
+|    99 |          3 |     2 | 09:45:00 | Round Trip New York to Windcreek Casino |       28 |    99 | Edward            | Chen             | 6462312319          | edwardchen@gmail.com   |
+|   102 |          5 |     5 | 05:30:00 | New York City Tour                      |       33 |   102 | Jason             | Morello          | 9293123128          | jasonmorello@gmail.com |
+|   112 |          4 |     1 | 10:30:00 | Round Trip Boston to New York City      |       37 |   112 | Parth             | Patel            | 8281727213          | parthpatel@gmail.com   |
++-------+------------+-------+----------+-----------------------------------------+----------+-------+-------------------+------------------+---------------------+------------------------+
