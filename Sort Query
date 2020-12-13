@@ -1,0 +1,12 @@
+mysql> use bus_db ;
+Database changed
+mysql> select busID , inspection_date from bus_detail ORDER BY inspection_date DESC;
++-------+-----------------+
+| busID | inspection_date |
++-------+-----------------+
+|     4 | 2020-12-22      |
+|     1 | 2020-11-20      |
+|     2 | 2020-10-20      |
+|     5 | 2020-10-16      |
+|     3 | 2020-08-16      |
++-------+-----------------+
