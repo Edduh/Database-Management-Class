@@ -1,9 +1,8 @@
 //* For INNER JOIN Charter_list with Charter_info *//
 
-
-mysql> SELECT charter_list.jobID, charter_info.clientID
-    -> FROM charter_list
-    -> INNER JOIN charter_info ON charter_list.jobID = charter_info.jobID;
+SELECT charter_list.jobID, charter_info.clientID 
+FROM charter_list 
+INNER JOIN charter_info ON charter_list.jobID = charter_info.jobID;
 +-------+----------+
 | jobID | clientID |
 +-------+----------+
